@@ -3,7 +3,6 @@ const API_KEY = import.meta.env.VITE_API_KEY;
 const BASE_URL = 'https://pruebaqtap2.onrender.com/api/v1';
 
 
-
 export async function getClienteByUid(uid) {
   const res = await fetch(`${BASE_URL}/clientes/${uid}`, {
     headers: { 'x-api-key': API_KEY }
